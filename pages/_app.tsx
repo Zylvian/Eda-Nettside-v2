@@ -1,5 +1,4 @@
 import "../styles/style.scss"
-import { AnimatePresence } from "framer-motion";
 
 function MyApp({ Component, pageProps }) {
   return <Component {...pageProps} />
