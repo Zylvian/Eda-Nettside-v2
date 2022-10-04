@@ -1,34 +1,54 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Eda Nettside
+Ny nettside for musikkgruppen Eda.
 
-## Getting Started
+Nettsiden bruker React og sass, og er nyere og kulere enn den gamle nettsiden.
 
-First, run the development server:
+### [https://ny.edamusic.no/](https://edamusic.no/)
 
-```bash
-npm run dev
-# or
-yarn dev
+*Hostet hos Jarle.*
+
+
+### Tutorial: Hvordan oppdatere nettsiden på webhotellet automatisk.
+**Før du starter:**
+
+    - Sørg for at Git koden din er strukturert riktig. Er det en www mappe i master folderen?
+    - Er de andre nettsidene under www mappen? (www/søknad)
+1. Finn fram til Git repoet ditt, e.g https://github.com/Zylvian/Eda-Nettside.
+2. Gå til 'Settings' -> 'Secrets', og legg inn FTP passordet ditt som "FTP_PASSWORD".
+3. Gå til 'Actions' -> 'New Workflow'.
+4. Lim inn denne koden, og bytt ut "username" med passordet du ble tilsendt av domeneshop:
+```
+on: push
+name: 🚀 Deploy website on push
+jobs:
+  web-deploy:
+    name: 🎉 Deploy
+    runs-on: ubuntu-latest
+    steps:
+    - name: 🚚 Get latest code
+      uses: actions/checkout@v2
+    
+    - name: 📂 Sync files
+      uses: SamKirkland/FTP-Deploy-Action@4.2.0
+      with:
+        server: ftp.domeneshop.no
+        username: BRUKERNAVN
+        password: ${{ secrets.FTP_PASSWORD }}
+    ```
+    *(Dokumentasjon: https://github.com/marketplace/actions/ftp-deploy)*
+
+5. Nettsiden din skal nå oppdatere seg hver gang du pusher ny kode til Git! 
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+---
 
-You can start editing the page by modifying `pages/old_index.js`. The page auto-updates as you edit the file.
+## Laget av:
 
-[API routes](https://nextjs.org/docs/api-routes/introduction) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.js`.
+![Mac and cheese te beste pris](/www/mac_cheese.webp?raw=true "Mac and cheese te beste pris")
 
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/api-routes/introduction) instead of React pages.
+### Mac - [@GMRMac](https://github.com/GMRMac)
 
-## Learn More
+<!-- ![Dilettant e på g e det mulig](/www/jarleglasses.jpg?raw=true?width=250 "Dilettant e på g e det mulig")` -->
+<img src="/www/jarleglasses.jpg" alt="drawing" width="250"/>
 
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+### Dilettant - [@Zylvian](https://github.com/Zylvian) 
