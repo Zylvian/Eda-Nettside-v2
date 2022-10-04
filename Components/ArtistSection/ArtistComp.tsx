@@ -5,7 +5,7 @@ export default function ArtistComp(props) {
 
     const artistData = props.artistdata;
     // console.log(artistData);
-    console.log(props);
+    // console.log(props);
 
     const artistClassName = "artist-section__artist__" + props.side;
 

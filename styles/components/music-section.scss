@@ -1,3 +1,72 @@
+@mixin both_men($color){
+  background-color: $color;
+  height: 55rem;
+  width: 80%;
+
+  box-shadow: 15px -10px 50px 10px rgba(40, 40, 40, 0.54);
+}
+
 .music-section{
+
+  display: flex;
+
+
+  .back-element{
+
+    @include both_men($second-color);
+
+    margin-top: 2rem;
+    right: 0;
+    position: absolute;
+
+  }
+
+  .front-container{
+
+    @include both_men($first-color);
+
+    margin-top: 4rem;
+    z-index: 10;
+    margin-bottom: 5rem;
+
+    display: flex;
+    justify-content: right;
+
+    &__right{
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: space-evenly;
+      margin: 3rem 12rem 3rem 3rem;
+    }
+
+    &__title{
+      @include navigation-font();
+      font-weight: lighter;
+      font-size: 4rem;
+      //text-decoration: underline;
+      //text-decoration-color: $second-color;
+      //text-decoration-style: wavy;
+      //text-decoration-thickness: 0.3rem;
+
+      padding-bottom: 3px;
+      border-bottom: 1px solid $second-color;
+    }
+
+  }
+
+  .spotify-frame{
+    $scale-number: 1.25;
+    $scale-number: 1.25;
+    //-ms-zoom: $scale-number;
+    //-moz-transform: scale($scale-number);
+    //-moz-transform-origin: 0 0;
+    //-o-transform: scale($scale-number);
+    //-o-transform-origin: 0 0;
+    //-webkit-transform: scale($scale-number);
+    //-webkit-transform-origin: middle;
+    width: 100%;
+    height: 40%;
+  }
 
 }

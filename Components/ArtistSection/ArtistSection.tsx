@@ -35,7 +35,7 @@ export default function ArtistSection(){
         new Artist("Ola B", "Han slappe fra Hardanger", olabcutout, olababstract)
     ];
 
-    console.log(artists)
+    // console.log(artists)
 
     return (
         <div className={"artist-section"}>

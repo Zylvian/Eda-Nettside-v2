@@ -34,6 +34,7 @@
       width: 100%;
       height: 100%;
       text-align: right;
+      color: white;
       //flex-direction: row-reverse;
     }
 
@@ -44,6 +45,7 @@
       justify-content: center;
       width: 100%;
       height: 100%;
+
     }
 
   }
@@ -51,6 +53,7 @@
 
   &__text{
 
+    margin-top: 2rem;
     &__minor{
 
       font-size: 1.4rem;

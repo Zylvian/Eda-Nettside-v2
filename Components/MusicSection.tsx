@@ -10,18 +10,22 @@ export default function MusicSection() {
 
                     alt=""/>
 
-                <h4 className={"front-container__title"}>
-                    MUSIKK
-                </h4>
+                <div className={"front-container__right"}>
+                    <h4 className={"front-container__title"}>
+                        MUSIKK
+                    </h4>
 
-                <iframe>
-                    SPOTIFY
-                </iframe>
+                    <iframe className={"spotify-frame"}
+                            src="https://open.spotify.com/embed/artist/6uqHSrgWf3HZhgb4bSHRJG?utm_source=generator"
+                            allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
+                            loading="eager"></iframe>
 
-                <div className={"front-container__links"}>
-                    <img alt="SPOTIFY"/>
-                    <img alt="YOUTUBE"/>
-                    <img alt="SOUNDCLOUD"/>
+                    <div className={"front-container__links"}>
+                        <img alt="SPOTIFY"/>
+                        <img alt="YOUTUBE"/>
+                        <img alt="SOUNDCLOUD"/>
+                    </div>
+
                 </div>
 
             </div>
