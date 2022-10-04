@@ -1,0 +1,33 @@
+@import "./styles/base/typography";
+
+.navbar{
+  height: 3rem;
+  width: 100%;
+  background: rgba(0,0,0,0.5);
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+
+  @include navigation-font;
+
+  &__element-wrapper{
+    color: floralwhite;
+
+    min-width: 5rem;
+    height: 2rem;
+    display: flex;
+    align-items: center;
+
+    &__link{
+      padding: 0rem 0.5rem;
+      font-size: 120%
+    }
+
+    &__icon{
+      width: 2rem;
+      margin: 0.4rem;
+      // Sets color to floralwhite:
+      filter: invert(92%) sepia(9%) saturate(1811%) hue-rotate(304deg) brightness(115%) contrast(110%);
+    }
+  }
+}

@@ -1,0 +1,47 @@
+@import "./styles/base/typography";
+
+
+.banner-with-title{
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+
+  //background-color: indianred;
+
+  //&__elems{
+
+    &__logo{
+      $height: 7rem;
+      height: $height;
+      width: auto;
+
+      margin: 1rem 0rem 0rem 0rem;
+    }
+
+    &__title{
+
+      //Text props
+      background-color: rgba(0,0,0,0.5);
+      color: floralwhite;
+      font-weight: bold;
+      font-size: 500%;
+
+      @include typing-font;
+
+      //Position
+
+      max-width: 30%;
+      margin-top: 20%;
+      padding: 1rem;
+      float: bottom;
+      text-align: center;
+    }
+
+
+  //}
+
+
+}

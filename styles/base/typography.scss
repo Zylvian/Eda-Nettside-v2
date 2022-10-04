@@ -1,0 +1,16 @@
+@import url("https://fonts.googleapis.com/css?family=Work+Sans:300,400");
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@900&display=swap');
+
+//body{
+//  //font-family: "Trebuchet MS", "Courier New", Arial;
+//  font-family: 'Poppins', 'Work-Sans', sans-serif;
+//}
+
+@mixin typing-font {
+  font-family: 'Poppins', sans-serif;
+}
+
+@mixin navigation-font {
+  font-family: 'Work-Sans', sans-serif;
+}

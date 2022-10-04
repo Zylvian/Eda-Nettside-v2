@@ -1,0 +1,69 @@
+.artist-section{
+  background-color: $fill-color;
+  width: 100%;
+  height: 60rem;
+  display: flex;
+
+  text-transform: uppercase;
+
+  background-image: -webkit-linear-gradient(-30deg, $first-color 50%, $second-color 50%);
+
+  &__photo{
+    height: 50%;
+  }
+
+  &__icon{
+    height: 15%;
+  }
+
+  &__artist{
+
+    //display: flex;
+    //flex-direction: column;
+    //align-items: center;
+    //justify-content: center;
+    //width: 100%;
+    //height: 100%;
+
+
+    &__right{
+      display: flex;
+      flex-direction: column-reverse;
+      align-items: center;
+      justify-content: center;
+      width: 100%;
+      height: 100%;
+      text-align: right;
+      //flex-direction: row-reverse;
+    }
+
+    &__left{
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      width: 100%;
+      height: 100%;
+    }
+
+  }
+
+
+  &__text{
+
+    &__minor{
+
+      font-size: 1.4rem;
+    }
+    &__major{
+      font-size: 5rem;
+    }
+
+    //&__right{
+    //  text-align: right;
+    //}
+  }
+
+
+
+}
