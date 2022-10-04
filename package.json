@@ -1,13 +1,17 @@
 {
-  "name": "y",
+  "name": "EdaWebsite",
   "version": "0.1.0",
-  "private": true,
+  "homepage": "https://github.com/Zylvian/Eda-Nettside-v2",
+
+  "private": false,
+
   "scripts": {
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
     "lint": "next lint"
   },
+
   "dependencies": {
     "@sanity/image-url": "^1.0.1",
     "next": "12.2.5",
