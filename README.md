@@ -7,6 +7,16 @@ Nettsiden bruker React og sass, og er nyere og kulere enn den gamle nettsiden.
 
 *Hostet hos Jarle.*
 
+---
+
+## WIP
+
+Nettsiden skal se slik ut at some point:
+
+![](/eda_nettside_illustrasjon.png?raw=true)
+
+---
+
 
 ### Tutorial: Hvordan oppdatere nettsiden på webhotellet automatisk.
 **Før du starter:**
