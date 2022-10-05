@@ -1,15 +1,19 @@
 @mixin both_men($color){
   background-color: $color;
-  height: 55rem;
+  height: 90vh;
   width: 80%;
 
   box-shadow: 15px -10px 50px 10px rgba(40, 40, 40, 0.54);
+
+  @media only screen and (max-width: 600px) {
+    height: 150vh;
+  }
 }
 
 .music-section{
 
   display: flex;
-
+  flex-direction: row;
 
   .back-element{
 
@@ -18,6 +22,12 @@
     margin-top: 2rem;
     right: 0;
     position: absolute;
+
+    @media only screen and (max-width: 600px) {
+      right: auto;
+      width: 110.5vh;
+      left: 0;
+    }
 
   }
 
@@ -58,13 +68,13 @@
   .spotify-frame{
     $scale-number: 1.25;
     $scale-number: 1.25;
-    //-ms-zoom: $scale-number;
-    //-moz-transform: scale($scale-number);
-    //-moz-transform-origin: 0 0;
-    //-o-transform: scale($scale-number);
-    //-o-transform-origin: 0 0;
-    //-webkit-transform: scale($scale-number);
-    //-webkit-transform-origin: middle;
+    -ms-zoom: $scale-number;
+    -moz-transform: scale($scale-number);
+    -moz-transform-origin: 0 0;
+    -o-transform: scale($scale-number);
+    -o-transform-origin: 0 0;
+    -webkit-transform: scale($scale-number);
+    -webkit-transform-origin: middle;
     width: 100%;
     height: 40%;
   }
